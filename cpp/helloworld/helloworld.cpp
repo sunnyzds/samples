@@ -1,18 +1,15 @@
 #include <stdio.h>
 
+#define LOG_TAG "MAIN"
 #include "log.h"
-
-//#define printlog(tag, fmt, args...) printf("[%s]"fmt, tag, ##args)
 
 int main(int argc, char* argv[])
 {
-	LOGI(">>main\n");
+    LOGI(">>main\n");
 
-//	LOGD("Hello World\n");
-	
-	printlog("hello", "world");
+    printlog("hello", "world\n");
+    
+    LOGI("<<main\n");
 
-//	LOGI("<<main\n");
-	
-	return 0;
+    return 0;
 }

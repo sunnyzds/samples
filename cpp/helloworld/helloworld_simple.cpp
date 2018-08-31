@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 #define DEBUG
 #define LOG_TAG "main"
 
@@ -8,17 +7,16 @@
 #ifdef DEBUG
 #define LOGI(fmt, args...) printf("[%s]:"fmt, LOG_TAG, ##args)
 #else
-#define LOGI( fmt, args...) 
+#define LOGI(fmt, args...) 
 #endif
 
 int main(int argc, char* argv[])
 {
-	LOGI(">>main\n");
+    LOGI(">>main\n");
 
-//	LOGD("Hello World\n");
+    LOGI("HelloWorld\n");
 
-	
-	LOGI("<<main\n");
-	
-	return 0;
+    LOGI("<<main\n");
+
+    return 0;
 }
