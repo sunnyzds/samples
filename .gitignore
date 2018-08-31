@@ -8,6 +8,7 @@ ompiled Static libraries
 *.a
 *.lib
 *.o
+*.so
 
 # Executables
 *.exe
