@@ -10,13 +10,20 @@
 #define LOGI(fmt, args...) 
 #endif
 
+#include "util.h"
+
 int main(int argc, char* argv[])
 {
+    float start = cur_ms();
+
     LOGI(">>main\n");
 
     LOGI("HelloWorld\n");
 
-    LOGI("<<main\n");
+    float end = cur_ms();
 
+    LOGI("runt time:%.3f\n", (end-start));
+
+    LOGI("<<main\n");
     return 0;
 }
