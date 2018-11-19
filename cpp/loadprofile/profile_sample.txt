@@ -1,0 +1,3 @@
+#v1
+_redlipStrength=0
+_bigeyeStrength=0
