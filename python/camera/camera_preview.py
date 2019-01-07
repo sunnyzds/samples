@@ -21,6 +21,10 @@ else:
     camera_src = args.dev
 
 cap = cv2.VideoCapture(camera_src)
+if not cap.isOpened():
+    print("video[%s] cannot be openned"%camera_src)
+    raise RuntimeError("video[%s] cannot be openned"%camera_src)
+        
 width, height = cap.get(3), cap.get(4)
 print(width, height)
 
